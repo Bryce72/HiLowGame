@@ -23,17 +23,15 @@ public class HiLo
                System.out.println("Your guess is too low. Pick another number: ");
                guess  = scan.nextInt();
            }
-           else if(guess > theNumber)
+           else
            {
                System.out.println("Your guess is too high. Pick another number: ");
                guess  = scan.nextInt();
            }
        }
 
-       if(guess == theNumber)
-       {
-           System.out.println("Congrats you picked the right number! The correct number was " + theNumber + "!");
-       }
+       System.out.println("Congrats you picked the right number! The correct number was " + theNumber + "!");
+
 
 
 
