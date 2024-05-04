@@ -2,14 +2,13 @@ import java.util.Scanner;
 public class HiLo
 {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
-
-        // creates a random number for the user to guess
-        int theNumber = (int) (Math.random() * 100 + 1);
-
         int guess = 0;
         String playAgain = "";
 
+        // creates a random number for the user to guess
+        int theNumber = (int) (Math.random() * 100 + 1);
         do {
             System.out.println("Pick a number 1-100: ");
             guess = scan.nextInt();
@@ -31,5 +30,7 @@ public class HiLo
             playAgain = scan.next();
 
         }while (playAgain.equalsIgnoreCase("y"));
+        System.out.println("Thank you for playing the guessing game! Goodbye!");
+        scan.close();
     }
 }
